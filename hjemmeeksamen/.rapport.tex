@@ -1,0 +1,29 @@
+\documentclass[11pt,a4paper,norsk]{article}
+\usepackage[norsk]{babel}
+\usepackage[utf8]{inputenc}
+\title{\textbf{Hjemmeeksamen rapport}}
+\author{INF1060 H15}
+\begin{document}
+\maketitle
+
+\section*{Oppgaver}
+\subsection*{1)}
+TCP protokollen gir en pålitelig overføring av data. TCP passer på at ingen pakker forsvinner, og 
+at pakkene blir overført i riktig rekkefølge. Hvis en pakke ikke er mottatt på en bestemt tid, vil 
+et tidsavbrudd oppstå. Sender vil da få beskjed om å sende pakken på nytt.
+
+\subsection*{2)}
+Jeg har en enkel tekst protokoll som bare overfører data umodifisert. I en ideell protokoll, er 
+første byte antall byte hele pakken består av, n bytes etter den første er for data som skal 
+overføres. Med denne protokollen vet mottaker hvor mange bytes pakken består av.
+
+\subsection*{3)}
+Det kan gå galt hvis man ikke bruker hton() og ntoh() for å få riktig byte rekkefølge.
+
+%\subsection*{4)}
+
+
+\subsection*{5)}
+Det finnes fork, epoll, select. Jeg har brukt select, fordi det er den jeg har lært å bruke.
+
+\end{document}
